@@ -1,12 +1,32 @@
 import React from "react"
 import TourList from "./TourList"
+import { useStaticQuery, graphql } from "gatsby"
 
+const getTours = graphql`
+  query {
+    tours: allContentfulTourExample {
+      edges {
+        node {
+          name
+          price
+          slug
+          country
+          contentful_id
+          days
+          images {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+`
 const Tours = () => {
-  return (
-    <div>
-      hello from tours <TourList />
-    </div>
-  )
+  const { tours } = useStaticQuery(getTours)
+
+  return <TourList tours={tours} />
 }
 
 export default Tours
