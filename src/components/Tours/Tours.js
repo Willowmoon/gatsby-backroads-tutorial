@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getTours = graphql`
   query {
-    tours: allContentfulTourExample {
+    tours: allContentfulTour {
       edges {
         node {
           name

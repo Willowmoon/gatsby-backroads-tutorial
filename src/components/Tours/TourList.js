@@ -6,7 +6,7 @@ import Title from "../Title"
 
 const getTourList = graphql`
   query {
-    tours: allContentfulTourExample {
+    tours: allContentfulTour {
       edges {
         node {
           name
