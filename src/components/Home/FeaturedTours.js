@@ -47,4 +47,5 @@ const FeaturedTours = () => {
   )
 }
 
+
 export default FeaturedTours
