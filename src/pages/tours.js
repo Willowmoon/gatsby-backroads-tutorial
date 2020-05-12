@@ -3,11 +3,13 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Tours from "../components/Tours/Tours"
+import SEO from "../components/SEO"
 const tours = (props) => {
   return (
     <Layout>
+      <SEO title="Tours" />
       <StyledHero img={props.data.defaultBcg.info.fluid} />
-      <Tours/>
+      <Tours />
     </Layout>
   )
 }
