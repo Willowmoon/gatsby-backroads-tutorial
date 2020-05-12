@@ -10,7 +10,7 @@ import SEO from "../components/SEO"
 const Blog = (props) => {
   const { currentPage, numPages } = props.pageContext
   const nextPage = `/blogs/${
-    currentPage == numPages ? numPages : currentPage + 1
+    currentPage === numPages ? numPages : currentPage + 1
   }`
   const prevPage = `/blogs/${currentPage <= 2 ? "" : currentPage - 1}`
   const { data } = props

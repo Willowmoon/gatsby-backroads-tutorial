@@ -28,7 +28,6 @@ const getTourList = graphql`
 
 const TourList = () => {
   const response = useStaticQuery(getTourList)
-  const tours = response.tours.edges
   const sortedTours = response.tours.edges
   return (
     <section className={styles.tours}>

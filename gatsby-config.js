@@ -20,6 +20,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
@@ -38,6 +39,14 @@ module.exports = {
         spaceId: process.env.SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://objective-cray-6637b5.netlify.app",
+        sitemap: "https://objective-cray-6637b5.netlify.app/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
   ],

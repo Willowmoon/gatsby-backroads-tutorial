@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import Title from "../components/Title"
 import BlogList from "../components/Blog/BlogList"
 import SEO from "../components/SEO"
 const blog = ({ data }) => {
