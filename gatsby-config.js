@@ -12,10 +12,9 @@ module.exports = {
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure!",
     author: "@johndoe",
-    data: {
-      name: "john",
-      age: 24,
-    },
+    twitterUsername: "@johndoe",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://objective-cray-6637b5.netlify.app",
   },
   /* Your site config here */
   plugins: [
